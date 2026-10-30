@@ -18,7 +18,7 @@ This theme is the light counterpart of the GalaxaLabs Titanium Dark Theme, publi
 
 ## Requirements
 
-- JupyterLab >= 4.0.0
+- JupyterLab >= 4.6.0
 
 ## Install
 
