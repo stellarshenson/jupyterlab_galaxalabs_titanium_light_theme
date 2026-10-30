@@ -2,6 +2,17 @@
 
 <!-- <START NEW CHANGELOG ENTRY> -->
 
+## [1.0.28] - 2026-10-30
+
+### Changed
+
+- Upgrade to extension template v4.6.5 and Makefile 1.46
+
+### Fixed
+
+- Raise typescript to ^5.9.0 with no cap below the next major
+- Take the scoped @stellarshenson/galaxalabs-jupyterlab-titanium-light-theme npm name
+
 <!-- <END NEW CHANGELOG ENTRY> -->
 
 ## [1.0.24] - 2026-10-14
