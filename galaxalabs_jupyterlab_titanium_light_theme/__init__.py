@@ -12,5 +12,5 @@ except ImportError:
 def _jupyter_labextension_paths():
     return [{
         "src": "labextension",
-        "dest": "galaxalabs_jupyterlab_titanium_light_theme"
+        "dest": "@stellarshenson/galaxalabs-jupyterlab-titanium-light-theme"
     }]

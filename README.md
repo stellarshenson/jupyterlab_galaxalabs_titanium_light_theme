@@ -1,7 +1,7 @@
 # GalaxaLabs Titanium Light Theme
 
 [![GitHub Actions](https://github.com/stellarshenson/jupyterlab_galaxalabs_titanium_light_theme/actions/workflows/build.yml/badge.svg)](https://github.com/stellarshenson/jupyterlab_galaxalabs_titanium_light_theme/actions/workflows/build.yml)
-[![npm version](https://img.shields.io/npm/v/galaxalabs_jupyterlab_titanium_light_theme.svg)](https://www.npmjs.com/package/galaxalabs_jupyterlab_titanium_light_theme)
+[![npm version](https://img.shields.io/npm/v/@stellarshenson/galaxalabs-jupyterlab-titanium-light-theme.svg)](https://www.npmjs.com/package/@stellarshenson/galaxalabs-jupyterlab-titanium-light-theme)
 [![PyPI version](https://img.shields.io/pypi/v/galaxalabs_jupyterlab_titanium_light_theme.svg)](https://pypi.org/project/galaxalabs_jupyterlab_titanium_light_theme/)
 [![Total PyPI downloads](https://static.pepy.tech/badge/galaxalabs_jupyterlab_titanium_light_theme)](https://pepy.tech/project/galaxalabs_jupyterlab_titanium_light_theme)
 [![JupyterLab 4](https://img.shields.io/badge/JupyterLab-4-orange.svg)](https://jupyterlab.readthedocs.io/en/stable/)

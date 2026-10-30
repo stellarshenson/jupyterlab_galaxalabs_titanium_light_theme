@@ -172,7 +172,7 @@ test('should emit an activation console message', async ({ page }) => {
     logs.filter(
       s =>
         s ===
-        'JupyterLab extension galaxalabs_jupyterlab_titanium_light_theme is activated!'
+        'JupyterLab extension @stellarshenson/galaxalabs-jupyterlab-titanium-light-theme is activated!'
     )
   ).toHaveLength(1);
 });
@@ -183,9 +183,15 @@ test('should apply the theme to the launcher', async ({ page }) => {
 
   expect(await page.theme.getTheme()).toEqual(THEME_NAME);
 
-  const layoutColor1 = await page.evaluate(() =>
-    getComputedStyle(document.body).getPropertyValue('--jp-layout-color1')
-  );
+  // The CSS minifier may shorten the token (#c0c0c0 to silver), so compare the
+  // colour the browser resolves, not the text of the variable.
+  const layoutColor1 = await page.evaluate(() => {
+    const probe = document.body.appendChild(document.createElement('div'));
+    probe.style.color = 'var(--jp-layout-color1)';
+    const color = getComputedStyle(probe).color;
+    probe.remove();
+    return color;
+  });
   expect(toHex(layoutColor1)).toEqual(themeLayoutColor1());
 
   await page.addStyleTag({ content: VOLATILE_COLUMN_HIDDEN });

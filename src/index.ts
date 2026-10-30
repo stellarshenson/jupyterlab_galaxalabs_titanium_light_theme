@@ -6,19 +6,20 @@ import {
 import { IThemeManager } from '@jupyterlab/apputils';
 
 /**
- * Initialization data for the galaxalabs_jupyterlab_titanium_light_theme extension.
+ * Initialization data for the @stellarshenson/galaxalabs-jupyterlab-titanium-light-theme extension.
  */
 const plugin: JupyterFrontEndPlugin<void> = {
-  id: 'galaxalabs_jupyterlab_titanium_light_theme:plugin',
+  id: '@stellarshenson/galaxalabs-jupyterlab-titanium-light-theme:plugin',
   description:
     'Light neutral-gray theme in the Win95 light-gray convention, the light counterpart of Galaxa Dark Theme - Titanium (Darcula lineage), designed to reduce eye strain',
   autoStart: true,
   requires: [IThemeManager],
   activate: (app: JupyterFrontEnd, manager: IThemeManager) => {
     console.log(
-      'JupyterLab extension galaxalabs_jupyterlab_titanium_light_theme is activated!'
+      'JupyterLab extension @stellarshenson/galaxalabs-jupyterlab-titanium-light-theme is activated!'
     );
-    const style = 'galaxalabs_jupyterlab_titanium_light_theme/index.css';
+    const style =
+      '@stellarshenson/galaxalabs-jupyterlab-titanium-light-theme/index.css';
 
     manager.register({
       name: 'Galaxa Light Theme - Titanium',
