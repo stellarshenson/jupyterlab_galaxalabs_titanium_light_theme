@@ -1,5 +1,5 @@
 {
-  "name": "jupyterlab_galaxalabs_titanium_light_theme-ui-tests",
+  "name": "@stellarshenson/galaxalabs-jupyterlab-titanium-light-theme-ui-tests",
   "version": "1.0.0",
   "description": "JupyterLab @stellarshenson/galaxalabs-jupyterlab-titanium-light-theme Integration Tests",
   "private": true,

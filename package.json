@@ -1,6 +1,6 @@
 {
     "name": "@stellarshenson/galaxalabs-jupyterlab-titanium-light-theme",
-    "version": "1.0.28",
+    "version": "1.0.29",
     "description": "Light neutral-gray theme in the Win95 light-gray convention, the light counterpart of Galaxa Dark Theme - Titanium (Darcula lineage), designed to reduce eye strain",
     "keywords": [
         "jupyter",
@@ -62,6 +62,8 @@
         "@eslint/js": "^9.39.0",
         "@jupyter/builder": "^1.2.0",
         "@jupyter/eslint-plugin": "^1.4.0",
+        "@jupyterlab/testutils": "^4.0.0",
+        "@types/jest": "^29.2.0",
         "@types/json-schema": "^7.0.11",
         "@types/react": "^18.3.0",
         "@types/react-addons-linked-state-mixin": "^0.14.22",
@@ -69,6 +71,7 @@
         "eslint-config-prettier": "^9.1.0",
         "eslint-plugin-prettier": "^5.5.0",
         "globals": "^15.15.0",
+        "jest": "^29.2.0",
         "npm-run-all2": "^7.0.1",
         "prettier": "^3.9.0",
         "rimraf": "^5.0.10",

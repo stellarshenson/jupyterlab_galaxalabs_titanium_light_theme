@@ -23,7 +23,7 @@ The following workspace rules are STRICTLY ENFORCED for this project:
 
 JupyterLab theme extension providing a light neutral-gray colour scheme in the Win95 light-gray convention, the light counterpart of the GalaxaLabs Titanium Dark Theme (Darcula lineage). Current version 1.0.0.
 
-- npm package: `galaxalabs_jupyterlab_titanium_light_theme`
+- npm package: `@stellarshenson/galaxalabs-jupyterlab-titanium-light-theme`
 - PyPI package: `galaxalabs-jupyterlab-titanium-light-theme`
 - GitHub: `stellarshenson/jupyterlab_galaxalabs_titanium_light_theme`
 - Use `make publish` to build and publish to both registries
