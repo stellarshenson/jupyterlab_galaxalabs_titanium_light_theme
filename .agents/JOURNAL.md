@@ -47,3 +47,6 @@ This journal tracks substantive work on documents, diagrams, and documentation c
 
 15. **Task - Require Python 3.12** (v1.0.31): raised the minimum Python to 3.12 on the owner's decision<br>
     **Result**: `requires-python` in `pyproject.toml` moved to `>=3.12`, and the classifiers for Python 3.10 and 3.11 are removed. Runtime floors already excluded older versions on some extensions, where pip then installed a release from before the scoped npm rename with no error. The dependency floors stay. `uv pip compile --python-version 3.12` resolves every runtime requirement, and CI runs Python 3.13.
+
+16. **Task - Check Links ignores the dead pepy.tech badge** (v1.0.31): Added the pepy.tech patterns to the check-links ignore list after the Build job failed<br>
+    **Result**: Build at `f504ae7` failed in `check_links`: the README badge link `https://pepy.tech/project/galaxalabs_jupyterlab_titanium_light_theme` answered 503 Service Unavailable to the `check-links` action, and curl from the workstation answered 503 as well, so the external service is down and the README is sound. Added `https://pepy.tech/.*` and `https://static.pepy.tech/.*` to `ignore_links` in `.github/workflows/build.yml`, the list the sibling GalaxaLabs themes already carry; every other README link stays checked. Commit `2026c70`.
