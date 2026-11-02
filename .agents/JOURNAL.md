@@ -50,3 +50,6 @@ This journal tracks substantive work on documents, diagrams, and documentation c
 
 16. **Task - Check Links ignores the dead pepy.tech badge** (v1.0.31): Added the pepy.tech patterns to the check-links ignore list after the Build job failed<br>
     **Result**: Build at `f504ae7` failed in `check_links`: the README badge link `https://pepy.tech/project/galaxalabs_jupyterlab_titanium_light_theme` answered 503 Service Unavailable to the `check-links` action, and curl from the workstation answered 503 as well, so the external service is down and the README is sound. Added `https://pepy.tech/.*` and `https://static.pepy.tech/.*` to `ignore_links` in `.github/workflows/build.yml`, the list the sibling GalaxaLabs themes already carry; every other README link stays checked. Commit `2026c70`.
+
+17. **Task - Build lifecycle brought to Makefile 1.48** (v1.0.31): the canonical Makefile went to every extension on 2026-11-02<br>
+    **Result**: This project took Makefile 1.48 verbatim in `f504ae7`; mrproper now removes tmp, logs, .venv, graphify-out, coverage and .pytest_cache; install and publish are .NOTPARALLEL; the cleaned tree carries the tag CHECKPOINT_JUPYTERLAB_4.6.5_UPGRADE_PORTED_1.0.31; the Build job also failed today in check_links because pepy.tech answered 503, so the README badge links joined the ignore list.
