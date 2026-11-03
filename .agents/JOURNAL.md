@@ -56,3 +56,6 @@ This journal tracks substantive work on documents, diagrams, and documentation c
 
 18. **Task - Release with the theme set, no source change** (v1.0.32): released with the other GalaxaLabs themes as the owner ordered after the bookmarks panel divider campaign<br>
     **Result**: The divider campaign of `jupyterlab_bookmarks_extension` requires one line between a panel title band and the first section band, and it measured every installed theme in headless Chrome (`tmp/workflows/band-divider/render-themes.md` of that repository). Titanium Light 1.0.31 already draws that line from its own tokens: with the filter closed and when scrolled, row y60 is the `#a0a0a0` bottom rule of the `#b0b0b0` title band, directly above the LINKS band. No source file changed in this repository. The release follows the owner's order to release the whole theme set, and `CHANGELOG.md` states it in one line.
+
+19. **Task [Short] - PayPal donate link added to the link-check ignore list** (v1.0.32): the PayPal link answered 403 to the GitHub runner in the Steel Dark theme<br>
+    **Result**: `.github/workflows/build.yml` now ignores `https://www.paypal.com/.*` in the check-links step, as the Steel Light theme does; no other file changed.
