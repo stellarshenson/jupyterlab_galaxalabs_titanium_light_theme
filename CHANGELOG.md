@@ -2,6 +2,12 @@
 
 <!-- <START NEW CHANGELOG ENTRY> -->
 
+## [1.0.32] - 2026-11-03
+
+### Changed
+
+- No source change: released with the GalaxaLabs theme set, as the theme tokens already draw one line between a panel title band and the first section band
+
 ## [1.0.31] - 2026-10-31
 
 ### Changed
